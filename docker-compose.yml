@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/workspace
     working_dir: /workspace
-    command: tail -f /dev/null
+    command: ./gradlew bootRun
     depends_on:
       - mysql
 
