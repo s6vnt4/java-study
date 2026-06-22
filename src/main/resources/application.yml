@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/sampledb?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=Asia/Tokyo
+    url: jdbc:mysql://localhost:3306/sampledb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Tokyo
     username: user
     password: pass
   jpa:
@@ -9,6 +9,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
   sql:
     init:
       mode: always
